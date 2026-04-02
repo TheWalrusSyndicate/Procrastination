@@ -1,6 +1,7 @@
 package net.thewarlussyndicate.procrastination
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -22,9 +23,7 @@ class MainActivity : ComponentActivity() {
         val screen = NoteScreen()
         setContent {
             ProcrastinationTheme {
-                Navigator(screen) {
-                    
-                }
+                Navigator(screen)
             }
         }
     }
